@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Cart | Riverside Bake &amp; Brew</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<nav aria-label="Main navigation">
+<a href="index.html" class="logo">Riverside <span>Bake &amp; Brew</span></a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="shop.html">Shop / Menu</a></li>
+<li><a href="wholesale.html">Wholesale</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="cart.html" aria-current="page" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+<section class="page-intro" aria-labelledby="cart-heading">
+<h1 id="cart-heading">Your Cart</h1>
+</section>
+
+<section aria-label="Cart contents">
+<table id="cart-table">
+<caption>Items in your cart</caption>
+<thead>
+<tr>
+<th scope="col">Item</th>
+<th scope="col">Price</th>
+<th scope="col">Quantity</th>
+<th scope="col">Remove</th>
+</tr>
+</thead>
+<tbody id="cart-items">
+<tr><td colspan="4">Your cart is empty.</td></tr>
+</tbody>
+</table>
+<p><strong>Total: R<span id="cart-total">0.00</span></strong></p>
+</section>
+
+<section aria-labelledby="fulfilment-heading">
+<h2 id="fulfilment-heading">Collection or Delivery</h2>
+<form action="#" method="post">
+<fieldset>
+<legend>Choose how you'd like to receive your order</legend>
+<label><input type="radio" name="fulfilment" value="collection" checked> Collection at shop</label>
+<label><input type="radio" name="fulfilment" value="delivery"> Local delivery</label>
+</fieldset>
+
+<label for="cart-name">Full Name</label>
+<input type="text" id="cart-name" name="name" required>
+
+<label for="cart-phone">Phone Number</label>
+<input type="tel" id="cart-phone" name="phone" required>
+
+<button type="submit" class="btn-primary">Checkout</button>
+</form>
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 Riverside Bake &amp; Brew, Vereeniging. All rights reserved.</p>
+</footer>
+
+<script src="js/cart.js"></script>
+</body>
+</html>

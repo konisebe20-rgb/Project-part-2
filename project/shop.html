@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop / Menu | Riverside Bake &amp; Brew</title>
+<meta name="description" content="Browse fresh bread, pastries and coffee from Riverside Bake & Brew and order online for collection or delivery.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+<nav aria-label="Main navigation">
+<a href="index.html" class="logo">Riverside <span>Bake &amp; Brew</span></a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="shop.html" aria-current="page">Shop / Menu</a></li>
+<li><a href="wholesale.html">Wholesale</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+</ul>
+</nav>
+</header>
+
+<main>
+
+<section class="page-intro" aria-labelledby="shop-heading">
+<h1 id="shop-heading">Shop Our Menu</h1>
+<p>Order ahead for collection, or choose local delivery at checkout. All items are baked fresh the same day.</p>
+</section>
+
+<nav class="category-filter" aria-label="Menu categories">
+<a href="#bread">Bread</a>
+<a href="#pastries">Pastries</a>
+<a href="#coffee">Coffee</a>
+</nav>
+
+<section id="bread" aria-labelledby="bread-heading">
+<h2 id="bread-heading">Bread</h2>
+<div class="product-grid">
+<article class="product-card">
+<img src="images/sourdough.jpg" alt="Freshly baked sourdough loaf">
+<h3>Sourdough Loaf</h3>
+<p>Slow-fermented for 24 hours.</p>
+<p class="price">R55</p>
+<button type="button" class="btn-primary add-to-cart" data-item="Sourdough Loaf" data-price="55">Add to Cart</button>
+</article>
+<article class="product-card">
+<img src="images/rye.jpg" alt="Dark rye bread loaf">
+<h3>Rye Loaf</h3>
+<p>Dense, dark rye with caraway seeds.</p>
+<p class="price">R60</p>
+<button type="button" class="btn-primary add-to-cart" data-item="Rye Loaf" data-price="60">Add to Cart</button>
+</article>
+<article class="product-card">
+<img src="./images/baguette.jpg" alt="French baguette">
+<h3>Baguette</h3>
+<p>Crisp crust, soft airy centre.</p>
+<p class="price">R35</p>
+<button type="button" class="btn-primary add-to-cart" data-item="Baguette" data-price="35">Add to Cart</button>
+</article>
+</div>
+</section>
+
+<section id="pastries" aria-labelledby="pastries-heading">
+<h2 id="pastries-heading">Pastries</h2>
+<div class="product-grid">
+<article class="product-card">
+<img src="./images/almond-croissant.jpg" alt="Almond croissant">
+<h3>Almond Croissant</h3>
+<p>Buttery pastry filled with almond cream.</p>
+<p class="price">R38</p>
+<button type="button" class="btn-primary add-to-cart" data-item="Almond Croissant" data-price="38">Add to Cart</button>
+</article>
+<article class="product-card">
+<img src="images/cinnamon-roll.jpg" alt="Cinnamon roll">
+<h3>Cinnamon Roll</h3>
+<p>Soft roll with cinnamon sugar and icing.</p>
+<p class="price">R32</p>
+<button type="button" class="btn-primary add-to-cart" data-item="Cinnamon Roll" data-price="32">Add to Cart</button>
+</article>
+<article class="product-card">
+<img src="./images/blueberry-muffin.jpg" alt="Blueberry muffin">
+<h3>Blueberry Muffin</h3>
+<p>Made with fresh blueberries.</p>
+<p class="price">R28</p>
+<button type="button" class="btn-primary add-to-cart" data-item="Blueberry Muffin" data-price="28">Add to Cart</button>
+</article>
+</div>
+</section>
+
+<section id="coffee" aria-labelledby="coffee-heading">
+<h2 id="coffee-heading">Coffee</h2>
+<div class="product-grid">
+<article class="product-card">
+<img src="./images/cofffee.jpg" alt="Cup of house blend coffee">
+<h3>House Blend Coffee</h3>
+<p>Locally roasted, ground fresh per order.</p>
+<p class="price">R32</p>
+<button type="button" class="btn-primary add-to-cart" data-item="House Blend Coffee" data-price="32">Add to Cart</button>
+</article>
+<article class="product-card">
+<img src="./images/coffee beans.jpg" alt="Bag of coffee beans">
+<h3>Coffee Beans (250g)</h3>
+<p>Take our house blend home with you.</p>
+<p class="price">R95</p>
+<button type="button" class="btn-primary add-to-cart" data-item="Coffee Beans 250g" data-price="95">Add to Cart</button>
+</article>
+</div>
+</section>
+
+</main>
+
+<footer>
+<p>&copy; 2026 Riverside Bake &amp; Brew, Vereeniging. All rights reserved.</p>
+</footer>
+
+<script src="js/cart.js"></script>
+</body>
+</html>
